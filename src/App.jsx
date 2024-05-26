@@ -11,7 +11,7 @@ function App() {
   
     <MainLayout>
       <Routes>
-        <Route path='/' element={<Main/>}/>
+        <Route path='/Portafolio' element={<Main/>}/>
       </Routes>
     </MainLayout>
     
