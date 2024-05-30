@@ -59,10 +59,10 @@ export const Main = () => {
           myWork.map((work,index)=>{
             return (
               <article className='work-wrap' key={index}>
-                <NavLink href={work.url} target='_blank' rel="noopener noreferrer">
+                <NavLink to={work.url} target='_blank' rel="noopener noreferrer">
                   <img className='work-img' src={work.imagenUrl} alt={`Imagen de presentacion de ${work.nombre}`} />
                 </NavLink>
-                <h4><NavLink className="styled-link" target='_blank' rel="noopener noreferrer" href={work.url}>{work.nombre}</NavLink></h4>
+                <h4><NavLink className="styled-link" target='_blank' rel="noopener noreferrer" to={work.url}>{work.nombre}</NavLink></h4>
                 <p>{work.descripcion}</p>
                 <h5 className='tecnologias-usadas'>Tecnologias usadas</h5>
                 <div className='mywork-tecnologies-wrap'>
