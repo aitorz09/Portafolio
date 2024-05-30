@@ -8,19 +8,26 @@
 .h3{
   font-size: 3rem;
   text-align: center;
+  margin-bottom: 5rem;
+  grid-column: 1 / -1;
+
 }
 .first-section{
-  margin-top: 5rem;
   display: flex;
   place-content: center;
-  gap: 15rem;
+  gap: 8rem;
   height: 60vh;
-
+  max-width: 1000px;
+justify-content: center;
+margin: 0 auto;
+margin-top: 5rem;
 }
 .main-aboutMe-wrap{
 display: flex;
 flex-direction: column;
 max-width: 400px;
+margin: 0 auto;
+justify-content: center;
 }
 .main-aboutMe-h2{
   font-size: 2.5rem;
@@ -29,11 +36,16 @@ max-width: 400px;
 }
 .main-aboutMe-img-wrap{
 display: flex;
+gap: 2REM;
+align-items: center;
 }
 .main-aboutMe-img{
+min-width: 220px;
+max-width: 250px;
 height: 250px;
-border-radius: 50px;
+border-radius: 50%;
 text-align: center;
+border: 5px solid;
 }
 .main-aboutMe-tecnologies-wrap{
   margin-top: 1rem;
@@ -48,12 +60,16 @@ text-align: center;
 .mywork-wrap{
   margin-top: 2rem;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(270px,1fr));
+  grid-template-rows: auto auto;
+  grid-template-columns: repeat(auto-fill, minmax(270px,1fr));
   place-items: center;
-  gap: 1rem;
+  gap: 7rem;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 .mywork-wrap p{
   font-size: 14px;
+  position: relative;
 }
 .mywork-tecnologies-wrap{
   display: flex;
@@ -61,10 +77,10 @@ text-align: center;
   
 }
 .work-wrap{
-  display: flex;
+  display: flex;  
   flex-direction: column;
   flex-wrap: wrap;
-  width: 270px;
+  max-width: 270px;
   gap: 1rem;
   padding: 1rem;
   
@@ -81,22 +97,40 @@ text-align: center;
 }
 .bootcamp-section{
   display: flex;
-  gap: 5rem;
-  height: 700px;
+  gap: 7rem;
+  max-height: 700px;
   justify-content: center;
   align-items: center;
 }
 .bootcamp-info{
-  width: 500px;
+  max-width: 500px;
+
+}
+.bootcamp-info h2{
+  font-size: 2rem;
+  font-weight: 800;
+  margin-bottom: 3rem
+}
+.bootcamp-img-wrap{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.bootcamp-img-wrap img{
+  max-width: 400px;
 }
 .second-section{
   display: flex;
   flex-direction: column;
   place-content: center;
   margin-top: 5rem;
-  height: 100vh;
+  height: 100vh;  
 }
-@media (max-width: 850px) {
+.bootcamp-section{
+  height: 1000px;
+  margin-top: 10rem;
+}
+@media (max-width: 957px) {
   .first-section{
     flex-direction: column;
     gap: 5rem;
@@ -107,20 +141,32 @@ text-align: center;
   }
   .bootcamp-section{
     flex-direction: column;
-    text-align: center;
-    width: 350px;
     gap: 5rem;
     height: 100vh;
     margin-top: 10rem;
     margin-bottom: 10rem;
+    min-height: 525px;
+    flex-wrap: nowrap;
   }
   .second-section{
     margin-top: 20rem;
     gap: 5rem;
   }
-  .main{
-    align-items: center;
+  .mywork-wrap{
+    max-width: 350px;
+    margin-top: 58rem;
+    
+  }
+ 
+  .bootcamp-section{
+    height: 1000px;
+    margin-top: 5rem;
+    max-width: 375px;
+    margin: 47rem auto;
   }
   
-  
+  .first-section{
+    max-width: 350px;
+  }
 }
+
