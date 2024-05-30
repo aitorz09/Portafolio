@@ -138,6 +138,11 @@ border: 5px solid;
   .main-aboutMe-img-wrap{
     margin-top: 10rem;
     justify-content: center;
+    gap: 1rem;
+  }
+  .main-aboutMe-img{
+    max-width: 150px;
+    max-height: 200px;
   }
   .bootcamp-section{
     flex-direction: column;
@@ -157,7 +162,7 @@ border: 5px solid;
     margin-top: 35rem;
     
   }
- 
+  
   .bootcamp-section{
     height: 1000px;
     margin-top: 5rem;
