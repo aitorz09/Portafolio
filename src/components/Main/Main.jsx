@@ -5,14 +5,22 @@ import habimg from '../../assets/HAB.png'
 import foto1 from '../../assets/1.png'
 import foto3 from '../../assets/3.png'
 import foto2 from '../../assets/2.png'
+import { Link, NavLink } from 'react-router-dom'
+
 export const Main = () => {
   return (
-    <main className="main">
-      <div className='first-section'>
-      <section className="main-aboutMe-img-wrap">
-        <img className="main-aboutMe-img" src={aitorimg} alt="Imagen de Aitor Carreras Simonet" />
-        <h2 className='main-aboutMe-h2'>Aitor <span style={{display:'block'}}>Carreras Simonet</span> </h2>
-      </section>
+    <main  className="main">
+      <section id='aboutme' className='first-section'>
+      <div className="main-aboutMe-img-wrap">
+        <div>
+          <img className="main-aboutMe-img" src={aitorimg} alt="Imagen de Aitor Carreras Simonet" />
+            <div className="aboutme-nav-wrap">
+              <NavLink className="styled-link" target='_blank' to={'https://github.com/aitorz09'}>GitHub</NavLink>
+              <NavLink className="styled-link" target='_blank' to={'https://www.linkedin.com/in/aitor-carreras/'}>Linkedin</NavLink>
+            </div>
+        </div>
+        <h1 className='main-aboutMe-h2'>Aitor <span style={{display:'block'}}>Carreras Simonet</span> </h1>
+      </div>
       <section className="main-aboutMe-wrap">
         <h2 className='main-aboutMe-h2'>Junior FullStack Developer</h2>
          <p>Graduado en un bootcamp intensivo. Me encanta crear aplicaciones funcionales y bien diseñadas. Durante el bootcamp, trabajé en varios proyectos que me permitieron aplicar mis conocimientos en situaciones reales y desarrollar mis habilidades como programador.</p>
@@ -28,8 +36,8 @@ export const Main = () => {
           }
           </ul>
       </section>
-      </div>
-        <section className='bootcamp-section'>
+      </section>
+        <section id='bootcamp' className='bootcamp-section'>
           <div className='bootcamp-info'>
             <h2>Mi experiencia en un BootCamp: {"Hack a Boss"}</h2>
             <p> Estoy muy emocionado de contarles que he completado el Bootcamp de Full Stack en #HackABoss.<br/> Han sido 16 semanas intensas, con desafíos y aprendizajes, pero finalmente he logrado obtener un APTO en todas las competencias.
@@ -45,18 +53,18 @@ export const Main = () => {
         </section> 
       <div className='second-section'>
 
-       <section className='mywork-wrap'>
-        <h3 className='h3'>My Work</h3>
+       <section id='mywork' className='mywork-wrap'>
+        <h2 className='h2'>My Work</h2>
         {
           myWork.map((work,index)=>{
             return (
               <article className='work-wrap' key={index}>
-                <a href={work.url} target='_blank' rel="noopener noreferrer">
+                <NavLink href={work.url} target='_blank' rel="noopener noreferrer">
                   <img className='work-img' src={work.imagenUrl} alt={`Imagen de presentacion de ${work.nombre}`} />
-                </a>
-                <h4><a target='_blank' rel="noopener noreferrer" href={work.url}>{work.nombre}</a></h4>
+                </NavLink>
+                <h4><NavLink className="styled-link" target='_blank' rel="noopener noreferrer" href={work.url}>{work.nombre}</NavLink></h4>
                 <p>{work.descripcion}</p>
-                <h5>Tecnologias usadas</h5>
+                <h5 className='tecnologias-usadas'>Tecnologias usadas</h5>
                 <div className='mywork-tecnologies-wrap'>
                   {
                     work.tecnologias.map((tec,index)=>{
