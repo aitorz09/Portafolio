@@ -33,7 +33,6 @@ justify-content: center;
 .main-aboutMe-h2{
   font-size: 2.5rem;
   font-weight: 800;
-
 }
 .main-aboutMe-img-wrap{
 display: flex;
@@ -60,6 +59,15 @@ border: 5px solid;
   display: flex;
   gap: 1rem;
   justify-content: space-between;
+}
+.soft-skills{
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem;
+  
+}
+.soft-skills h3{
+  border-bottom: 2px solid black;
 }
 .tecnologie-img{
   width: 30px;

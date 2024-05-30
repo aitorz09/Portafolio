@@ -64,7 +64,7 @@ export const myWork = [
     nombre: "Parejas de emojis",
     imagenUrl: emojis,
     url:'https://aitorz09.github.io/Proyecto-Memory/',
-    descripcion: 'Un juego de memoria en el que el usuario debe encontrar todas las parejas de emojis con el menor inteto de errores possibles. Inspirado en el juego de memoria clasico y elaborado durante el BootCamp de Hack a Boss.',
+    descripcion: 'Un juego de memoria en el que el usuario debe encontrar todas las parejas de emojis con el menor intento de errores posibles. Inspirado en el juego de memoria clasico y elaborado durante el BootCamp de Hack a Boss.',
     tecnologias: [javascript,css,html5,git,github]
   }
 ]

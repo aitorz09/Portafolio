@@ -24,17 +24,21 @@ export const Main = () => {
       <section className="main-aboutMe-wrap">
         <h2 className='main-aboutMe-h2'>Junior FullStack Developer</h2>
          <p>Graduado en un bootcamp intensivo. Me encanta crear aplicaciones funcionales y bien diseñadas. Durante el bootcamp, trabajé en varios proyectos que me permitieron aplicar mis conocimientos en situaciones reales y desarrollar mis habilidades como programador.</p>
-          <ul className='main-aboutMe-tecnologies-wrap'>
-          {
-            
-            tecnologias.map((tec,index)=>{
-              console.log(tec.imagenUrl);
-              return (
-                <li key={index}><img className='tecnologie-img' src={tec.imagenUrl} alt={tec.nombre} /></li>
-              )
-            })
-          }
-          </ul>
+         <div className='soft-skills'>
+
+          <h3>SoftSkills</h3>
+            <ul className='main-aboutMe-tecnologies-wrap'>
+            {
+              
+              tecnologias.map((tec,index)=>{
+                console.log(tec.imagenUrl);
+                return (
+                  <li key={index}><img className='tecnologie-img' src={tec.imagenUrl} alt={tec.nombre} /></li>
+                )
+              })
+            }
+            </ul>
+         </div>
       </section>
       </section>
         <section id='bootcamp' className='bootcamp-section'>
