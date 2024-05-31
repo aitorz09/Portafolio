@@ -2,7 +2,7 @@
 .main{
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: 7rem;
   place-content: center;
   margin-top: 5rem;
 }
