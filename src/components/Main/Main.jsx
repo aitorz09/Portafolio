@@ -9,12 +9,8 @@ export const Main = () => {
     <main  className="main">
      
       <AboutMe/>
-    
-     
-      <Bootcamp/>
-    
-     
       <Mywork/>
+      <Bootcamp/>
     
     </main> 
   )
