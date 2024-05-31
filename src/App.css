@@ -10,9 +10,10 @@ html, body {
   margin: 0;
   padding: 0;
   background-color: #212322;
-  font-family: "Space Mono", monospace;
+  font-family: "Caveat", cursive;
   font-style: normal;
   color: #EDF3F9;
+  
 }
 
 #root{

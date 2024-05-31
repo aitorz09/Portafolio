@@ -2,6 +2,7 @@
 import foto1 from '../../assets/1.png'
 import foto3 from '../../assets/3.png'
 import foto2 from '../../assets/2.png'
+import './index.css'
 export const Bootcamp = () => {
   return (
     <section id='bootcamp' className='bootcamp-section'>

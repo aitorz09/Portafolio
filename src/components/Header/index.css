@@ -5,13 +5,14 @@
   margin-bottom: 2rem;
   width: 95%;
   position: fixed;
+  font-size: 25px;
 }
 .header-links-wrap{
   display: flex;
   gap: 1rem;
 }
 .h1{
-  font-size: 2rem;
+  font-size: 3rem;
   font-weight: 800;
 }
 

@@ -2,6 +2,7 @@ import React from 'react'
 import { NavLink } from 'react-router-dom'
 import aitorimg from '../../assets/AitorFoto.png'
 import { tecnologias } from '../../data/data.js'
+import './index.css'
 export const AboutMe = () => {
   return (
     <section id='aboutme' className='first-section'>
