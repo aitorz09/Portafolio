@@ -4,13 +4,14 @@ import foto3 from '../../assets/3.png'
 import foto2 from '../../assets/2.png'
 import './index.css'
 import { Reveal } from '../Reveal/Reveal.jsx'
+import { Link, NavLink } from 'react-router-dom'
 
 export const Bootcamp = () => {
   return (
     <section id='bootcamp' className='bootcamp-section'>
       <div className='bootcamp-info'>
         <Reveal>
-          <h2 className='main-aboutMe-h2'>Mi experiencia en un BootCamp: {"Hack a Boss"}</h2>
+          <h2 className='main-aboutMe-h2'>Mi experiencia en un BootCamp: <NavLink className="styled-link" to="https://www.hackaboss.com/" targe="_blank">Hack a Boss</NavLink></h2>
         </Reveal>
        
           <p> <Reveal>Estoy muy emocionado de contarles que he completado el Bootcamp de Full Stack en #HackABoss.<br /> Han sido 16 semanas intensas, con desafíos y aprendizajes, pero finalmente he logrado obtener un APTO en todas las competencias.</Reveal>
