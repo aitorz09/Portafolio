@@ -3,7 +3,7 @@
   justify-content: space-between;
   align-items: center;
   margin-bottom: 2rem;
-  width: 100%;
+  width: 95%;
   position: fixed;
 }
 .header-links-wrap{
@@ -15,9 +15,8 @@
   font-weight: 800;
 }
 
-@media (max-width: 1600px){
+ @media (max-width: 1600px){
  .header{
   position: inherit;
-  width: inherit;
  }
-}
+} 
