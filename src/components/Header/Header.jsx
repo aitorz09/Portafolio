@@ -12,9 +12,9 @@ export const Header = () => {
       <header style={{zIndex:"999"}} id='header' className='header'>
         <p className='h1'>Thor</p>
         <div  className='header-links-wrap'>
-          <HashLink  to={'#header'} smooth  className='styled-link'>Me</HashLink>
-          <HashLink  to={'#bootcamp'} className='styled-link'>BootCamp</HashLink>
-          <HashLink  to={'#mywork'} className='styled-link'>Work</HashLink>
+          <HashLink  to={'#aboutme'}  smooth  className='styled-link'>Me</HashLink>
+          <HashLink  to={'#bootcamp'} smooth className='styled-link'>BootCamp</HashLink>
+          <HashLink  to={'#mywork'} smooth className='styled-link'>Work</HashLink>
           {/* <HashLink onClick={scrollToSection} to={'#contactme'} className='styled-link'>Contact</HashLink> */}
         {/* <button><Icon icon="material-symbols:menu-open" /></button> */}
         </div>
