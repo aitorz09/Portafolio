@@ -6,7 +6,7 @@ import { Reveal } from '../Reveal/Reveal.jsx'
 
 export const Main = () => {
   return (
-    <main  className="main" style={{display:"flex",flexDirection:"column",justifyContent:"center",width:"100vw"}}>
+    <main  className="main">
      <Reveal>
       <AboutMe/>
      </Reveal>

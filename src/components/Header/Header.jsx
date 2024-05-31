@@ -5,29 +5,20 @@ import { HashLink } from 'react-router-hash-link'
 import "./index.css"
 import { Reveal } from '../Reveal/Reveal.jsx'
 
-function scrollToSection(event) {
-  event.preventDefault();
-  const target = document.querySelector(event.target.hash);
-  if (target) {
-    window.scrollTo({
-      top: target.offsetTop - 50, // ajusta el valor según sea necesario
-      behavior: 'smooth'
-    });
-  }
-}
+
 export const Header = () => {
   return (
-    <Reveal>
-      <header id='header' className='header'>
+    
+      <header style={{zIndex:"999"}} id='header' className='header'>
         <p className='h1'>Thor</p>
-        <div className='header-links-wrap'>
-          <HashLink onClick={scrollToSection} to={'#header'} smooth offset={-5000} className='styled-link'>Me</HashLink>
-          <HashLink onClick={scrollToSection} to={'#bootcamp'} className='styled-link'>BootCamp</HashLink>
-          <HashLink onClick={scrollToSection} to={'#mywork'} className='styled-link'>Work</HashLink>
+        <div  className='header-links-wrap'>
+          <HashLink  to={'#header'} smooth  className='styled-link'>Me</HashLink>
+          <HashLink  to={'#bootcamp'} className='styled-link'>BootCamp</HashLink>
+          <HashLink  to={'#mywork'} className='styled-link'>Work</HashLink>
           {/* <HashLink onClick={scrollToSection} to={'#contactme'} className='styled-link'>Contact</HashLink> */}
         {/* <button><Icon icon="material-symbols:menu-open" /></button> */}
         </div>
       </header>
-    </Reveal>
+   
   )
 }
