@@ -19,7 +19,7 @@ export const Reveal = ({children,width = 'fit-content'}) => {
       variants={{
         hidden:{
           opacity:0,
-          y:75
+          y:25
         },
         visible:{
           opacity:1,
