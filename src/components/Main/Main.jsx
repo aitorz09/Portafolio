@@ -7,15 +7,15 @@ import { Reveal } from '../Reveal/Reveal.jsx'
 export const Main = () => {
   return (
     <main  className="main">
-     <Reveal>
+     
       <AboutMe/>
-     </Reveal>
-     <Reveal>
+    
+     
       <Bootcamp/>
-     </Reveal>
-     <Reveal>
+    
+     
       <Mywork/>
-     </Reveal>
+    
     </main> 
   )
 }

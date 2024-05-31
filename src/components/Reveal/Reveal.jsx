@@ -12,14 +12,14 @@ export const Reveal = ({children,width = 'fit-content'}) => {
       slideControls.start('visible')
     }
     console.log(isInView);
-  },[isInView])
+  },[isInView,slideControls,mainControls])
   return (
-    <div ref={ref} style={{position:"relative"}}>
+    <div ref={ref} style={{position: "relative", width }}>
       <motion.div
       variants={{
         hidden:{
           opacity:0,
-          y:-100
+          y:75
         },
         visible:{
           opacity:1,
@@ -29,16 +29,25 @@ export const Reveal = ({children,width = 'fit-content'}) => {
       }}
       initial='hidden'
       animate={mainControls}
-      transition={{duration:0.5,delay:0.5}}
-      >{children}</motion.div>
+      transition={{duration:0.5,delay:0.5,ease:'easeIn'}}
+      >{children}
+      </motion.div>
       <motion.div variants={{
         hidden:{left:"0"},
-        visible:{left:"100%"}
+        visible:{right:"100%"}
       }}
       initial='hidden'
       animate={slideControls}
       transition={{duration:0.5,ease:'easeIn'}}
-      style={{position:'absolute',background:'white',left:'0',top:'4',bottom:'4',right:'0',zIndex:'20'}}
+      style={{
+        position:'absolute',
+        background:'#8DCF00',
+        top:'0',
+        bottom:'0',
+        left:'0%',
+        right:'0%',
+        zIndex:20
+      }}
       />
     </div>
   )
