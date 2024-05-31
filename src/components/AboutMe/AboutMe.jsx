@@ -10,13 +10,12 @@ export const AboutMe = () => {
     <section id='aboutme' className='first-section'>
       
         <div className="main-aboutMe-img-wrap">
-          <div>
+          <div  style={{display:"flex",flexDirection:"column",justifyContent:"center",alignItems:"center"
+          }}>
             <Reveal>
-
             <img className="main-aboutMe-img" src={aitorimg} alt="Imagen de Aitor Carreras Simonet" />
             </Reveal>
             <Reveal>
-
             <div className="aboutme-nav-wrap">
               <NavLink className="styled-link" target='_blank' to={'https://github.com/aitorz09'}>GitHub</NavLink>
               <NavLink className="styled-link" target='_blank' to={'https://www.linkedin.com/in/aitor-carreras/'}>Linkedin</NavLink>

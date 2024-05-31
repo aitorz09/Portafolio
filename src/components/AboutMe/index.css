@@ -5,3 +5,33 @@
 #aboutme h1{
   font-size: 4rem;
 }
+.image-container {
+  position: relative;
+  display: inline-block;
+}
+
+.image {
+  position: relative;
+  z-index: 1; /* Asegura que la imagen esté por encima del pseudo-elemento */
+}
+
+.image::before {
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  border: 2px solid ;
+  animation: animateBorder 5s infinite linear;
+}
+
+@keyframes animateBorder {
+  0% {
+    border-color: red; /* Color inicial del borde */
+  }
+  100% {
+    border-color: blue; /* Color final del borde */
+  }
+}
+
