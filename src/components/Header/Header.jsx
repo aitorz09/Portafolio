@@ -21,8 +21,8 @@ export const Header = () => {
         <HashLink onClick={scrollToSection} to={'#header'} smooth offset={-5000} className='styled-link'>Me</HashLink>
         <HashLink onClick={scrollToSection} to={'#bootcamp'} className='styled-link'>BootCamp</HashLink>
         <HashLink onClick={scrollToSection} to={'#mywork'} className='styled-link'>Work</HashLink>
-        <HashLink onClick={scrollToSection} to={'#contactme'} className='styled-link'>Contact</HashLink>
-      <button><Icon icon="material-symbols:menu-open" /></button>
+        {/* <HashLink onClick={scrollToSection} to={'#contactme'} className='styled-link'>Contact</HashLink> */}
+      {/* <button><Icon icon="material-symbols:menu-open" /></button> */}
       </div>
     </header>
   )
