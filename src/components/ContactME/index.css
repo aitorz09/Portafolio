@@ -1,0 +1,45 @@
+.form{
+display: flex;
+flex-direction: column;
+width: 50%;
+margin-top: 5rem;
+font-size: 1.5rem;
+}
+.form input{
+  padding: 0.5rem;
+}
+.conctactme-wrap{
+display: flex;
+justify-content: space-evenly;
+width: 1000px;
+margin: 0 auto;;
+}
+.info-wrap{
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  font-size: 2rem;
+  place-content: center;
+}
+.form-btn{
+  padding: 0.5rem;
+  font-family: 'Caveat', sans-serif;
+  font-weight: 700 ;
+  font-size: 1rem;
+}
+@media (max-width: 957px){
+  .conctactme-wrap{
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 65rem;
+    width: 375px;
+    
+  }
+  .form-input{
+    width: 375px;
+    
+  }
+  .form textarea{
+    width: 375px;
+  }
+}

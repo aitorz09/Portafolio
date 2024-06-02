@@ -19,13 +19,13 @@ export const AboutMe = () => {
             <div className="aboutme-nav-wrap">
               <NavLink className="styled-link" target='_blank' to={'https://github.com/aitorz09'}>GitHub</NavLink>
               <NavLink className="styled-link" target='_blank' to={'https://www.linkedin.com/in/aitor-carreras/'}>Linkedin</NavLink>
-              <NavLink className="styled-link" target='_blank 'to="https://v5.airtableusercontent.com/v3/u/29/29/1717178400000/xhXc-BCAdHMelc4xHeM00A/mlS-sT-LI2mHK-XigavwI84ChrKPDD4mRY3HbvNUWtOxQoQKtCrkFI_AHPtVZaOYjVK-bBs5yAm107Mzy0Qyo1tMWe0UmHW1ygpolmlb_pDDwsJu_Nq4VKaeRQe394LOrXm9_Sq3uSvrZDMdiejX7AACy0QHC9-u8NLIEQb459UFaKGLb5Ctp6CQb8XR88GJ/geUmwnizz2s2QHon70K-RPVhD0XYc_scCmhzqbiiNzI">CV</NavLink>
+              <NavLink className="styled-link" target='_blank' download to="https://drive.google.com/file/d/1nEWKlwpNJ9-UC8b8GXIZlbCi7Ahxyw_A/view?usp=drive_link">CV</NavLink>
             </div>
             </Reveal>
           </div>
           <Reveal>
 
-          <h1 className='main-aboutMe-h2'>Aitor <Reveal></Reveal><span style={{ display: 'block', color: '#09f' }}>Carreras</span> </h1>
+          <h1 className='main-aboutMe-h2'>Aitor<span style={{ display: 'block', color: '#09f' }}>Carreras</span> </h1>
           </Reveal>
         </div>
       

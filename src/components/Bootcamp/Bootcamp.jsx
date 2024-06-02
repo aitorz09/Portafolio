@@ -1,10 +1,9 @@
-import React from 'react'
 import foto1 from '../../assets/1.png'
 import foto3 from '../../assets/3.png'
 import foto2 from '../../assets/2.png'
 import './index.css'
 import { Reveal } from '../Reveal/Reveal.jsx'
-import { Link, NavLink } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 
 export const Bootcamp = () => {
   return (
